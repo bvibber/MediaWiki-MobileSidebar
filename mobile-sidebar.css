@@ -1,0 +1,82 @@
+#mobile-sidebar {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background: #444;	
+	box-shadow: 0 0 20px #333;
+	border-radius: 10px;
+	padding: 5px;
+	text-align: center;
+	border-top: 5px solid #666;
+	-webkit-user-select: none; /* webkit (safari, chrome) browsers */
+	-moz-user-select: none; /* mozilla browsers */
+	-khtml-user-select: none; /* webkit (konqueror) browsers */
+	-ms-user-select: none; /* IE10+ */
+	user-select: none;
+}
+
+#mobile-sidebar iframe {
+	background: #fff;
+	border: none;
+}
+
+#mobile-sidebar a.close {
+	display: block;
+	background: #333;
+	color: #fff;
+	text-decoration: none;
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	border-radius: 100%;
+	margin: 10px auto;
+	cursor: pointer;
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	border-bottom: 1px solid #aaa;
+}
+
+#mobile-sidebar a.close:hover {
+	background: #222;
+}
+
+#mobile-sidebar a.mobile_link {
+	display: block;
+	color: #aaa;
+	font-size: 11px;
+	text-decoration: none;
+	margin: 4px;
+}
+
+#mobile-sidebar .egg {
+	width: 320px;
+	height: 566px;
+	text-align: center;
+}
+
+#mobile-sidebar .egg img {
+	width: 100px;
+	margin-top: 60px;
+}
+
+#mobile-sidebar .egg p {
+	color: #aaa;
+	margin-top: 345px;
+}
+
+#mobile-sidebar .egg p a {
+	color: #ddd;
+}
+
+#ca-mobile.icon a {
+	background-image: url(https://upload.wikimedia.org/wikipedia/commons/2/2a/Phone-apple-iphone.svg);
+	margin: 0px;
+	padding: 3.1em 0px 0px;
+	display: block;
+	width: 36px;
+	height: 0px;
+	overflow: hidden;
+	background-position: 5px 60%;
+	background-size: 24px 24px;
+}
