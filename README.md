@@ -8,7 +8,7 @@ This is intended to help editors identify problematic page and template renderin
 
 To test with the github copy add to your common.js:
 
-```
+```javascript
 mw.loader.load('https://rawgit.com/brion/MediaWiki-MobileSidebar/master/mobile-sidebar.js', 'text/javascript');
 mw.loader.load('https://rawgit.com/brion/MediaWiki-MobileSidebar/master/mobile-sidebar.css', 'text/css');
 ```
