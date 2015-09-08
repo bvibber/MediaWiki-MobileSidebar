@@ -20,8 +20,11 @@ $(function () {
 	// only 320x533 or so. And let's not even get into the iPhone 6 Plus!
 
 	function showSidebar() {
-		localStorage['mw-mobile-sidebar-state'] = 'show';
-
+		try {
+			localStorage['mw-mobile-sidebar-state'] = 'show';
+		} catch (e) {
+			// [[phab:T66721]] causes NS_ERROR_DOM_QUOTA_REACHED on every page load
+		}
 		var $content = $('#content');
 
 		var top = $content.position().top,
@@ -88,7 +91,11 @@ $(function () {
 	}
 
 	function hideSidebar() {
-		localStorage['mw-mobile-sidebar-state'] = 'hidden';
+		try {
+			localStorage['mw-mobile-sidebar-state'] = 'hidden';
+		} catch (e) {
+			// [[phab:T66721]] causes NS_ERROR_DOM_QUOTA_REACHED on every page load
+		}
 		$('#mobile-sidebar').remove();
 		$('#content').css('margin-right', '0');
 	}
